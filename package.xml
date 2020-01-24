@@ -1,0 +1,16 @@
+<package format="2">
+  <name>astra_viewer</name>
+  <version>1.0.0</version>
+  <description>
+    This packages provides integration with the cameras supported by the Astra SDK
+  </description>
+  <maintainer email="fraser.lefevre@metamorphsoftware.com">Fraser LeFevre</maintainer>
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+</package>

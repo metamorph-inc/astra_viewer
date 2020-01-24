@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf8"?>
+<launch>
+    <node name="astra_ros" pkg="astra_viewer" type="astra_viewer" output="screen">
+        <param name="streams" value="depth,color,ir16" />
+        <param name="color/image" value="true" />
+        <param name="color/pointcloud" value="true" />
+        <param name="depth/image" value="true" />
+        <param name="depth/pointcloud" value="true" />
+        <param name="enable_registration" value="true" />
+        <param name="ir16/image" value="true" />
+        <param name="ir16/pointcloud" value="true" />
+        <param name="irrgb/image" value="true" />
+        <param name="irrgb/pointcloud" value="true" />
+        <param name="depth/enable_mirroring" value="true" />
+        <param name="color/enable_mirroring" value="true" />
+        <param name="ir16/enable_mirroring" value="true" />
+        <param name="irrgb/enable_mirroring" value="true" />
+    </node>
+    <node name="rviz" pkg="rviz" type="rviz" output="screen" args="-d '$(find astra_viewer)/launch/rviz_configs/all_views.rviz'" />
+</launch>
